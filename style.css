@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all .50s ease;
+    line-height: 1.7rem;
+    font-size: 1rem;
+}
+
+:root {
+    --pizzathena_font: "pizzathena";
+    --pizzathena_brown: #452313;
+    --pizzathena_yellow: #FAAB19;
+    --pizzathena_green: #128040;
+    --pizzathena_red: #C02026;
+    --whitecolor: #F5F7F8;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Font Face */
+
+@font-face {
+    font-family: "pizzathena";
+    src: 
+        url(./fonts/dalekpinpointbold-webfont.woff2) format("woff2"),
+        url(./fonts/dalekpinpointbold-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Left Column Styles */
+
+.left.column {
+    background-image: url(./image/pizzathena-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    position: relative;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 8%;
+    left: 0;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+h1 {
+    font-family: var(--pizzathena_font);
+    font-size: 2rem;
+    color: var(--whitecolor);
+    vertical-align: top;
+}
+
+/* Right Column Styles */
+
+.right.column {
+    flex: 2;
+}
+
+p {
+    font-weight: 500;
+    text-wrap: balance;
+    margin-bottom: 15px;
+}
+
+p > span {
+    color: var(--pizzathena_brown);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    width: 300px;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input {
+    border: 1px solid black;
+    outline: none;
+    padding: 6px 10px;
+    border-radius: 15px;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 11px 17px;
+    background-color: var(--pizzathena_yellow);
+    font-weight: bold;
+}
+
+.container.first {
+    padding-top: 20px;
+}
+
+.container {
+    padding: 0 75px;
+    margin-bottom: 35px;
+}
+
+.grey {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pizzathena_yellow);
+}
+
+/* Pseudo Class Styles */
+
+input:focus {
+    border-color: var(--pizzathena_yellow);
+}
+
+input:valid {
+    color: var(--pizzathena_green);
+    border-color: var(--pizzathena_green);
+}
+
+input:invalid {
+    color: var(--pizzathena_red);
+    border-color: var(--pizzathena_red);
+}
+
+button:hover, button:active {
+    background-color: transparent;
+    color: var(--pizzathena_yellow);
+    border: 1px solid var(--pizzathena_yellow);
+    cursor: pointer;
+}
+
+/* Media Queries Styles */
+
+@media only screen and (max-width: 1200px) {
+
+    .right.column {
+        flex: 1;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    body {
+        display: block;
+    }
+
+    .left.column {
+        height: 300px;
+        background-size: cover;
+    }
+
+    .overlay {
+        top: 25%;
+    }
+
+}

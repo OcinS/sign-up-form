@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form - Nico Sison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="left column">
+
+        <div class="overlay">
+            <img src="./image/pizzathena-logo.png" alt="Pizzathena Logo">
+            <h1>PIZZATHENA</h1>
+        </div>
+
+    </div>
+
+    <div class="right column">
+
+        <div class="container first">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.</p>
+            <p>You know you want to!</p>
+        </div>
+
+        <div class="container">
+            <form>
+
+                <div class="grey">
+
+                    <h2>Let's do this!</h2>
+
+                    <div class="form-section">
+                        <div class="input-wrapper">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="John" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Wick" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="input-wrapper">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" placeholder="johnwick@gmail.com" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0917-234-3214" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="input-wrapper">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" placeholder="Create your Password" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your Password" required>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button type="submit">Create Account</button>
+
+            </form>
+        </div>
+
+        <div class="container first">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
